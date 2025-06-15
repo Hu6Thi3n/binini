@@ -44,7 +44,7 @@ spawn(function()
     actionLabel.Size = UDim2.new(0, 350, 0, 25)
     actionLabel.Position = UDim2.new(0, 10, 0, 85)
     actionLabel.BackgroundTransparency = 1
-    actionLabel.TextColor3 = Color3.fromRGB(255, 150, 0)z
+    actionLabel.TextColor3 = Color3.fromRGB(255, 150, 0)
     actionLabel.TextXAlignment = Enum.TextXAlignment.Left
     actionLabel.Font = Enum.Font.Code
     actionLabel.TextSize = 16
