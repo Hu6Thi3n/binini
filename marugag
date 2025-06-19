@@ -428,12 +428,3 @@ pcall(function()
         end
     end
 end)
-
-    while task.wait(delayTime) do
-        for _,item in ipairs(Player.Backpack:GetChildren()) do
-            if item:IsA("Tool") and item:FindFirstChild("Handle") and item:GetAttribute("Quantity") then
-                pcall(function() fc.Seed(item) end)
-            end
-        end
-    end
-end)
