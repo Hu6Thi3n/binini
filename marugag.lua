@@ -93,7 +93,8 @@ spawn(function()
 
     local Lighting = game:GetService("Lighting")
     local Terrain = workspace:FindFirstChildOfClass("Terrain")
-    sethiddenproperty(Lighting, "Technology", Enum.Technology.Compatibility)
+    -- Removed deprecated sethiddenproperty usage
+    Lighting.Technology = Enum.Technology.Compatibility
     Lighting.GlobalShadows = false
     Lighting.FogEnd = math.huge
     Lighting.Brightness = 5
@@ -174,7 +175,8 @@ pcall(function()
     game:GetService("UserSettings"):GetService("UserGameSettings").SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
 end)
 
-pcall(function()
+    -- Removed deprecated sethiddenproperty usage
+    game:GetService("Lighting").Technology = Enum.Technology.Compatibility
     sethiddenproperty(game:GetService("Lighting"), "Technology", Enum.Technology.Compatibility)
 
     local Lighting = game:GetService("Lighting")
