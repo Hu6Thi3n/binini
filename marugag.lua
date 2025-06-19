@@ -1,6 +1,6 @@
 local cachedPlayerData = nil
 local Player = game:GetService("Players").LocalPlayer
-
+print("Loading Successfully! Welcome to Optimization Script by Hu6Thi3n")
 
 spawn(function()
     wait(5)
