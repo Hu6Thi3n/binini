@@ -1,6 +1,7 @@
 local cachedPlayerData = nil
 local Player = game:GetService("Players").LocalPlayer
-print("Loading Successfully! Welcome to Optimization Script by Hu6Thi3n")
+print("Welcome to Maru Hub W Config, Make by Hu6Thi3n")
+
 
 spawn(function()
     wait(5)
@@ -18,7 +19,7 @@ spawn(function()
     title.TextXAlignment = Enum.TextXAlignment.Left
     title.Font = Enum.Font.Code
     title.TextSize = 18
-    title.Text = "Binini Hub Cat Hub W Config Farm Fruit"
+    title.Text = "Maru Hub W Config"
 
     local fpsLabel = Instance.new("TextLabel", screenGui)
     fpsLabel.Size = UDim2.new(0, 250, 0, 25)
@@ -49,16 +50,6 @@ spawn(function()
     actionLabel.Font = Enum.Font.Code
     actionLabel.TextSize = 16
     actionLabel.Text = "Action: Loading..."
-
-    local creditsLabel = Instance.new("TextLabel", screenGui)
-    creditsLabel.Size = UDim2.new(0, 250, 0, 25)
-    creditsLabel.Position = UDim2.new(0, 10, 0, 110)
-    creditsLabel.BackgroundTransparency = 1
-    creditsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    creditsLabel.TextXAlignment = Enum.TextXAlignment.Left
-    creditsLabel.Font = Enum.Font.Code
-    creditsLabel.TextSize = 16
-    creditsLabel.Text = "Credits: obii Real"
 
     getgenv().UpdateAction = function(text)
         actionLabel.Text = "Action: " .. tostring(text)
@@ -93,8 +84,7 @@ spawn(function()
 
     local Lighting = game:GetService("Lighting")
     local Terrain = workspace:FindFirstChildOfClass("Terrain")
-    -- Removed deprecated sethiddenproperty usage
-    Lighting.Technology = Enum.Technology.Compatibility
+    sethiddenproperty(Lighting, "Technology", Enum.Technology.Compatibility)
     Lighting.GlobalShadows = false
     Lighting.FogEnd = math.huge
     Lighting.Brightness = 5
@@ -175,8 +165,7 @@ pcall(function()
     game:GetService("UserSettings"):GetService("UserGameSettings").SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
 end)
 
-    -- Removed deprecated sethiddenproperty usage
-    game:GetService("Lighting").Technology = Enum.Technology.Compatibility
+pcall(function()
     sethiddenproperty(game:GetService("Lighting"), "Technology", Enum.Technology.Compatibility)
 
     local Lighting = game:GetService("Lighting")
